@@ -6,9 +6,7 @@
 #include <string>
 #include "header.h"
 
-using namespace std;
-
-extern string name;
+extern std::string name;
 
 int main()
 {

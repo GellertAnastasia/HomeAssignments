@@ -2,8 +2,8 @@
         first test project
 */
 
-#ifndef HEADER_h
-#define HEADER_h
+#ifndef HEADER_H
+#define HEADER_H
 
 int hello();
 

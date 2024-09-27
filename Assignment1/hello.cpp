@@ -1,11 +1,13 @@
+/* Anastasia Gellert st130144@student.spbu.ru
+        first test project
+*/
+
 #include <iostream>
 
-using namespace std;
-
-string name="world";
+std::string name="world";
 
 void hello()
 {
-	cout<<"Hello, "<<name<<"!"<<endl;
-	cin>>name;
+	std::cout<<"Hello, "<<name<<"!"<<std::endl;
+	std::cin>>name;
 }

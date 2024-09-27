@@ -1,10 +1,12 @@
-# Project-1
-project 1
-
-Gellert Anastasia Evgenievna, 24.B82-mm
-
-st130144@student.spbu.ru
-
-Сборка make
-
-Запуск ./myProg
+# Assignment 1
+## Author
+Геллерт Анастасия Евгеньевна, группа 24.Б82-мм
+## Contacts
+st130144@stdudent.spbu.ru
+## Description
+Home assingment 1 - extended "Hello world". First says "Hello,
+World". After this reads a string in a cycle and says "Hello,<string>"
+## Build
+make
+## Run
+./myProg
