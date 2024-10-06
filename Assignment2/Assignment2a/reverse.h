@@ -1,9 +1,10 @@
+/* Anastasia Gellert st130144@student.spbu.ru
+        assignment 2a
+*/
+
 #ifndef REVERSE_H
 #define REVERSE_H
 
-//int size;
-//int *arr = new int[size];
-//char buffer;
-void reverse(int arr[], int size, char buffer);
+void reverse(char arr[], int size);
 
 #endif

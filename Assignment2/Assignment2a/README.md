@@ -4,9 +4,13 @@
 ## Contacts
 st130144@stdudent.spbu.ru
 ## Description
-Home assingment 2a - extended "Hello world". First says "Hello,
-World". After this reads a string in a cycle and says "Hello,<string>"
+Home assingment 2a - file flip. First opens the file as binary, reads into array, 
+reverses the array, and after write it in a new file
 ## Build
 make
 ## Run
-
+./myProg
+## Input file
+source
+## Output file
+temppdf
