@@ -4,8 +4,8 @@
 ## Contacts
 st130144@stdudent.spbu.ru
 ## Description
-Home assingment 2b - extended "Hello world". First says "Hello,
-World". After this reads a string in a cycle and says "Hello,<string>"
+Home assingment 2b - reverse Polish notation. First reads the line, divides into elements.
+After this calculates expression and prints the result.
 ## Build
 make
 ## Run
