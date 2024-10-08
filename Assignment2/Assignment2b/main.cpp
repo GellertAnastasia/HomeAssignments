@@ -10,7 +10,7 @@ int main()
     std::string line;
     std::getline(std::cin, line); //считываем строчку
 
-    int* arr = new int[size(line)]; //создаем стек
+    double* arr = new double[size(line)]; //создаем стек
 
     calculate(arr, line);
 

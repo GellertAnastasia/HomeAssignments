@@ -7,11 +7,11 @@
 #include <sstream>
 
 
-void calculate(int arr[], std::string line)
+void calculate(double arr[], std::string line)
 {
     std::istringstream iss(line); //из line создаем поток istringstream
     std::string str;
-    int *parr = &arr[0]; //создаем указатель на вершину стека
+    double *parr = &arr[0]; //создаем указатель на вершину стека
 
     while(iss >> str) //читаем из строчки из потока
     {

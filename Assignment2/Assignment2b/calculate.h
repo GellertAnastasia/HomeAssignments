@@ -7,6 +7,6 @@
 
 #include <string>
 
-void calculate(int arr[], std::string line);
+void calculate(double arr[], std::string line);
 
 #endif
