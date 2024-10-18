@@ -13,11 +13,11 @@ private:
 	};
 	Wheels wheels;
 public:
-	Transformer(int valueLevel, int valueStrength);
+/*	Transformer(int valueLevel, int valueStrength);
 	~Transformer();
-	
+*/	
 	bool fire();
-	bool transform();
+	bool ultimate();
 	bool jump();
 	bool move();
 

@@ -1,7 +1,7 @@
 #include "transformer.h"
 
 
-Transformer::Transformer(int valueLevel, int valueStrength) {
+/*Transformer::Transformer(int valueLevel, int valueStrength) {
 	level = valueLevel;
         strength = valueStrength;
 //        Wheels wheels;
@@ -9,7 +9,7 @@ Transformer::Transformer(int valueLevel, int valueStrength) {
 }
 Transformer::~Transformer() {
 	
-}
+}*/
 
 
 bool Transformer::Wheels::move() {
@@ -23,7 +23,7 @@ bool Transformer::fire() {
         ammo--;
 	return true;
 }
-bool Transformer::transform() {
+bool Transformer::ultimate() {
         level++;
         strength++;
         fuel--;
