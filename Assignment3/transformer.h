@@ -7,10 +7,19 @@ private:
         int ammo;
         int level;
         int strength;
+	class Wheels {
+	public:
+		bool move();
+	};
+	Wheels wheels;
 public:
+	Transformer(int valueLevel, int valueStrength);
+	~Transformer();
+	
 	bool fire();
 	bool transform();
 	bool jump();
+	bool move();
 
 	void SetFuel(int);
 	void SetAmmo(int);
@@ -21,6 +30,7 @@ public:
 	int GetAmmo();
 	int GetLevel();
 	int GetStrength();
+	
 
 };
 

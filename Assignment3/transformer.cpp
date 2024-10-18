@@ -1,5 +1,24 @@
 #include "transformer.h"
 
+
+Transformer::Transformer(int valueLevel, int valueStrength) {
+	level = valueLevel;
+        strength = valueStrength;
+//        Wheels wheels;
+//	this.wheels = new Wheels;
+}
+Transformer::~Transformer() {
+	
+}
+
+
+bool Transformer::Wheels::move() {
+	return true;
+}
+bool Transformer::move() {
+	return wheels.move();
+}
+
 bool Transformer::fire() {
         ammo--;
 	return true;
