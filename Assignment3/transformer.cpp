@@ -1,15 +1,15 @@
 #include "transformer.h"
 
 
-/*Transformer::Transformer(int valueLevel, int valueStrength) {
+Transformer::Transformer(int valueLevel, int valueStrength) {
 	level = valueLevel;
         strength = valueStrength;
-//        Wheels wheels;
-//	this.wheels = new Wheels;
+}
+Transformer::Transformer() : Transformer(0,0) {
 }
 Transformer::~Transformer() {
 	
-}*/
+}
 
 
 bool Transformer::Wheels::move() {
