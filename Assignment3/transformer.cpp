@@ -8,17 +8,14 @@ Transformer::Transformer(int valueLevel, int valueStrength) {
 Transformer::Transformer() : Transformer(0,0) {
 }
 Transformer::~Transformer() {
-	
 }
 
-
-bool Transformer::Wheels::move() {
-	return true;
+bool Transformer::strike() {
+	return(sword.strike());
 }
 bool Transformer::move() {
-	return wheels.move();
+	return(wheels.move());
 }
-
 bool Transformer::fire() {
         ammo--;
 	return true;

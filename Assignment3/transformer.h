@@ -1,5 +1,7 @@
 #ifndef TRANSFORMER_H
 #define TRANSFORMER_H
+#include "sword.h"
+#include "wheels.h"
 
 class Transformer {
 private:
@@ -7,20 +9,18 @@ private:
         int ammo;
         int level;
         int strength;
-	class Wheels {
-	public:
-		bool move();
-	};
-	Wheels wheels;
+        Wheels wheels;
+        Sword sword;
 public:
-	Transformer(int valueLevel, int valueStrength);
 	Transformer();
+	Transformer(int valueLevel, int valueStrength);
 	~Transformer();
 	
 	bool fire();
 	bool ultimate();
 	bool jump();
 	bool move();
+	bool strike();
 
 	void SetFuel(int);
 	void SetAmmo(int);
