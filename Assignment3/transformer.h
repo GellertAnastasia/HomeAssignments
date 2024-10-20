@@ -1,3 +1,7 @@
+/* Anastasia Gellert st130144@student.spbu.ru
+	assignment 3
+*/
+
 #ifndef TRANSFORMER_H
 #define TRANSFORMER_H
 #include "sword.h"

@@ -1,6 +1,9 @@
+/* Anastasia Gellert st130144@student.spbu.ru
+	assignment 3
+*/
+
 #include "transformer.h"
 #include <iostream>
-
 
 Transformer::Transformer(int valueLevel, int valueStrength) {
 	level = valueLevel;

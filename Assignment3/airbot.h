@@ -1,3 +1,7 @@
+/* Anastasia Gellert st130144@student.spbu.ru
+	assignment 3
+*/
+
 #ifndef AIRBOT_H
 #define AIRBOT_H
 #include "autobot.h"

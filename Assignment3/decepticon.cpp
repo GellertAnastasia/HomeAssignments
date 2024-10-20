@@ -1,3 +1,7 @@
+/* Anastasia Gellert st130144@student.spbu.ru
+	assignment 3
+*/
+
 #include "decepticon.h"
 
 Decepticon::Decepticon(int valueAnger, int valueDexterity) {

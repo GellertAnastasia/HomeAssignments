@@ -1,3 +1,7 @@
+/* Anastasia Gellert st130144@student.spbu.ru
+	assignment 3
+*/
+
 #include "autobot.h"
 
 Autobot::Autobot(int valueWisdom, int valueLuck) {
