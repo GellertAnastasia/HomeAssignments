@@ -8,7 +8,8 @@ int main() {
 	airbot.SetAmmo(50);
 	airbot.fire();
 	airbot.SetFuel(100);
-        airbot.strike();
+	Sword sword;
+        airbot.strike(sword);
         //airbot.fight();
 	std::cout<<airbot.GetAmmo()<<std::endl;
 	std::cout<<airbot.GetFuel()<<std::endl;

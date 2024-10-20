@@ -9,7 +9,7 @@ private:
         int ammo;
         int level;
         int strength;
-        Wheels wheels;
+        Wheels* wheels;
         Sword sword;
 public:
 	Transformer();
@@ -20,7 +20,7 @@ public:
 	bool ultimate();
 	bool jump();
 	bool move();
-	bool strike();
+	bool strike(Sword sword);
 
 	void SetFuel(int);
 	void SetAmmo(int);

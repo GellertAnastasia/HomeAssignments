@@ -1,20 +1,25 @@
 #include "transformer.h"
+#include <iostream>
 
 
 Transformer::Transformer(int valueLevel, int valueStrength) {
 	level = valueLevel;
         strength = valueStrength;
+        wheels = new Wheels;
 }
 Transformer::Transformer() : Transformer(0,0) {
 }
 Transformer::~Transformer() {
+	delete wheels;
 }
 
-bool Transformer::strike() {
-	return(sword.strike());
+bool Transformer::strike(Sword sword) {
+	sword.strike();
+	return true;
 }
 bool Transformer::move() {
-	return(wheels.move());
+	wheels->move();
+	return true;
 }
 bool Transformer::fire() {
         ammo--;
