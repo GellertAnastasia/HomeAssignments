@@ -16,6 +16,8 @@ Class methods were tested using tests.
 ### Demo application
 make
 ### Demo tests suite
+make tests
+
 make testTransformer
 
 make testAutobot

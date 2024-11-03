@@ -44,6 +44,9 @@ testWheels: test-wheels.o wheels.o
 	g++ test-wheels.o wheels.o -o testWheels -lgtest -lgtest_main -pthread
 test-wheels.o: test-wheels.cpp
 	g++ -c test-wheels.cpp
+	
+tests: test-transformer.o test-autobot.o test-decepticon.o test-airbot.o test-sword.o test-wheels.o
+	g++ test-transformer.o test-autobot.o test-decepticon.o test-airbot.o test-sword.o test-wheels.o transformer.o autobot.o decepticon.o airbot.o sword.o wheels.o -o tests -lgtest -lgtest_main -pthread
 
 clean:
-	rm -rf *.o myProg testTransformer testAutobot testDecepticon testAirbot testSword testWheels
+	rm -rf *.o myProg testTransformer testAutobot testDecepticon testAirbot testSword testWheels tests
