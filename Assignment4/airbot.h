@@ -1,26 +1,27 @@
 /* Anastasia Gellert st130144@student.spbu.ru
-	assignment 3
+	assignment 4
 */
 
 #ifndef AIRBOT_H
 #define AIRBOT_H
 #include "autobot.h"
 
-class Airbot: public Autobot {
+class Airbot: public Autobot
+{
 private:
-	int speed;
-	int bravery;
+    int speed;
+    int bravery;
 public:
-	Airbot();
-	Airbot(int valueSpeed, int valueBravery);
+    Airbot();
+    Airbot(int valueSpeed, int valueBravery);
 
-	bool fly();
-	
-	void SetSpeed(int);
-	void SetBravery(int);
+    bool fly();
 
-	int GetSpeed();
-	int GetBravery();
+    void SetSpeed(int);
+    void SetBravery(int);
+
+    int GetSpeed();
+    int GetBravery();
 };
 
 #endif

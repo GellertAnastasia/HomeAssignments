@@ -1,13 +1,14 @@
 /* Anastasia Gellert st130144@student.spbu.ru
-	assignment 3
+	assignment 4
 */
 
 #ifndef SWORD_H
 #define SWORD_H
 
-class Sword {
+class Sword
+{
 public:
-	bool strike();
+    bool strike();
 };
 
 #endif

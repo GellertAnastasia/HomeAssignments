@@ -1,5 +1,5 @@
 /* Anastasia Gellert st130144@student.spbu.ru
-	assignment 3
+	assignment 4
 */
 
 #include "gtest/gtest.h"
@@ -7,31 +7,31 @@
 
 TEST(decepticon, fight)
 {
-	Decepticon decepticon(1,1);
-	EXPECT_TRUE(decepticon.fight());
+    Decepticon decepticon(1,1);
+    EXPECT_TRUE(decepticon.fight());
 }
 
 TEST(decepticon, GetAnger)
 {
-	Decepticon decepticon(1,1);
-	EXPECT_EQ(decepticon.GetAnger(), 1);
+    Decepticon decepticon(1,1);
+    EXPECT_EQ(decepticon.GetAnger(), 1);
 }
 
 TEST(decepticon, GetDexterity)
 {
-	Decepticon decepticon(1,1);
-	EXPECT_EQ(decepticon.GetDexterity(), 1);
+    Decepticon decepticon(1,1);
+    EXPECT_EQ(decepticon.GetDexterity(), 1);
 }
 
 TEST(decepticon, SetAnger)
 {
-	Decepticon decepticon(1,1);
-	decepticon.SetAnger(2);
-	EXPECT_EQ(decepticon.GetAnger(), 2);
+    Decepticon decepticon(1,1);
+    decepticon.SetAnger(2);
+    EXPECT_EQ(decepticon.GetAnger(), 2);
 }
 TEST(decepticon, SetDexterity)
 {
-	Decepticon decepticon(1,1);
-	decepticon.SetDexterity(2);
-	EXPECT_EQ(decepticon.GetDexterity(), 2);
+    Decepticon decepticon(1,1);
+    decepticon.SetDexterity(2);
+    EXPECT_EQ(decepticon.GetDexterity(), 2);
 }

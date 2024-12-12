@@ -1,4 +1,4 @@
-# Assignment 3
+# Assignment 4
 ## Author
 Геллерт Анастасия Евгеньевна, группа 24.Б82-мм
 ## Contacts
@@ -6,29 +6,16 @@ st130144@stdudent.spbu.ru
 
 
 ## Description
-Home assingment 3 - class hierarchy. 
-Transformers class and three inherited classes (Autobots, Decepticons, Airbots) were created. 
-In Transformers class, a composition has been created with Wheel class and an association with Sword class. 
-Class methods were tested using tests.
-
+Home assingment 4 - overloading. 
+Implemented overloading of the output operator for class Transformer. Implemented overloading of constructor and comparison operators.
 
 ## Build
 ### Demo application
 make
 ### Demo tests suite
-make tests
+make test
 
-make testTransformer
-
-make testAutobot
-
-make testDecepticon
-
-make testAirbot
-
-make testSword
-
-make testWheels
+./test-all
 
 ## Run
-./myProg
+./transformer

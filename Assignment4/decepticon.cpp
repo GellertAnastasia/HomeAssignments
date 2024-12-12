@@ -1,30 +1,37 @@
 /* Anastasia Gellert st130144@student.spbu.ru
-	assignment 3
+	assignment 4
 */
 
 #include "decepticon.h"
 
-Decepticon::Decepticon(int valueAnger, int valueDexterity) {
-	anger = valueAnger;
-        dexterity = valueDexterity;
+Decepticon::Decepticon(int valueAnger, int valueDexterity)
+{
+    anger = valueAnger;
+    dexterity = valueDexterity;
 }
-Decepticon::Decepticon() : Decepticon(0,0) {
-}
-
-bool Decepticon::fight() {
-	return true;
+Decepticon::Decepticon() : Decepticon(0,0)
+{
 }
 
-void Decepticon::SetAnger(int valueAnger) {
-	anger = valueAnger;
-}
-void Decepticon::SetDexterity(int valueDexterity) {
-	dexterity = valueDexterity;
+bool Decepticon::fight()
+{
+    return true;
 }
 
-int Decepticon::GetAnger() {
-	return anger;
+void Decepticon::SetAnger(int valueAnger)
+{
+    anger = valueAnger;
 }
-int Decepticon::GetDexterity() {
-	return dexterity;
+void Decepticon::SetDexterity(int valueDexterity)
+{
+    dexterity = valueDexterity;
+}
+
+int Decepticon::GetAnger()
+{
+    return anger;
+}
+int Decepticon::GetDexterity()
+{
+    return dexterity;
 }

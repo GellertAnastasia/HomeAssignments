@@ -1,5 +1,5 @@
 /* Anastasia Gellert st130144@student.spbu.ru
-	assignment 3
+	assignment 4
 */
 
 #include "gtest/gtest.h"
@@ -7,6 +7,6 @@
 
 TEST(wheels, fight)
 {
-	Wheels wheels;
-	EXPECT_TRUE(wheels.move());
+    Wheels wheels;
+    EXPECT_TRUE(wheels.move());
 }

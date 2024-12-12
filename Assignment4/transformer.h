@@ -1,5 +1,5 @@
 /* Anastasia Gellert st130144@student.spbu.ru
-	assignment 3
+	assignment 4
 */
 
 #ifndef TRANSFORMER_H
@@ -8,35 +8,36 @@
 #include "wheels.h"
 #include <iostream>
 
-class Transformer {
+class Transformer
+{
 private:
-        int fuel;
-        int ammo;
-        int level;
-        int strength;
-        Wheels* wheels;
-        Sword sword;
+    int fuel;
+    int ammo;
+    int level;
+    int strength;
+    Wheels* wheels;
+    Sword sword;
 public:
-	Transformer();
-	Transformer(int valueLevel, int valueStrength);
-	~Transformer();
-	
-	bool fire();
-	bool ultimate();
-	bool jump();
-	bool move();
-	bool strike(Sword sword);
+    Transformer();
+    Transformer(int valueLevel, int valueStrength);
+    ~Transformer();
 
-	void SetFuel(int);
-	void SetAmmo(int);
-	void SetLevel(int);
-	void SetStrength(int);
+    bool fire();
+    bool ultimate();
+    bool jump();
+    bool move();
+    bool strike(Sword sword);
 
-	int GetFuel();
-	int GetAmmo();
-	int GetLevel();
-	int GetStrength();
-	
+    void SetFuel(int);
+    void SetAmmo(int);
+    void SetLevel(int);
+    void SetStrength(int);
+
+    int GetFuel();
+    int GetAmmo();
+    int GetLevel();
+    int GetStrength();
+
 
 };
 
