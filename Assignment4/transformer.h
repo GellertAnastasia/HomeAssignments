@@ -40,4 +40,10 @@ public:
 
 };
 
+std::ostream& operator<<(std::ostream& os, Transformer& transformer);
+bool operator<(Transformer& transformer1, Transformer& transformer2);
+bool operator>(Transformer& transformer1, Transformer& transformer2);
+bool operator==(Transformer& transformer1, Transformer& transformer2);
+
+
 #endif

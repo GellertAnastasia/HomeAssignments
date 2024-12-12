@@ -7,18 +7,6 @@
 #include "autobot.h"
 #include "airbot.h"
 
-std::ostream& operator<<(std::ostream& os, Transformer& transformer) {
-	return os << "Трансформер: уровень = " << transformer.GetLevel() << ", сила = " << transformer.GetStrength();
-}
-bool operator<(Transformer& transformer1, Transformer& transformer2) {
-	return transformer1.GetStrength() < transformer2.GetStrength();
-}
-bool operator>(Transformer& transformer1, Transformer& transformer2) {
-	return transformer1.GetStrength() > transformer2.GetStrength();
-}
-bool operator==(Transformer& transformer1, Transformer& transformer2) {
-	return transformer1.GetStrength() == transformer2.GetStrength();
-}
 
 int main() {
 	

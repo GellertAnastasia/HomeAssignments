@@ -1,55 +1,42 @@
-PROJECT = transformer
-
-LIBPROJECT = $(PROJECT).a
-
-TESTPROJECT = test-$(PROJECT)
-
-CXX = g++
-
-A = ar
-
-AFLAGS = rsv
-
-CCXFLAGS = -I. -std=c++17 -Wall -g -fPIC
-
-LDXXFLAGS = $(CCXFLAGS) -L. -l:$(LIBPROJECT)
-
-LDGTESTFLAGS = $(LDXXFLAGS) -lgtest -lgtest_main -lpthread
-
-DEPS=$(wildcard *.h)
-
-SOURCES = main.cpp transformer.cpp autobot.cpp decepticon.cpp airbot.cpp sword.cpp wheels.cpp
-
-OBJ = $(SOURCES:.cpp=.o)
-
-TEST_SOURCES = test-transformer.cpp test-autobot.cpp test-decepticon.cpp test-airbot.cpp test-sword.cpp test-wheels.cpp
-TEST_OBJ = $(TEST_SOURCES:.cpp=.o)
-
-
-.PHONY: default
-
-default: all;
-
-%.o: %.cpp $(DEPS)
-	$(CXX) -c -o $@ $< $(CXXFLAGS)
-
+PROJECT = transformer 
+ 
+LIBPROJECT = $(SOURCES:.cpp=.a) 
+ 
+CXX = g++ 
+A = ar 
+AFLAGS = rsv 
+CCXFLAGS = -I. -std=c++17 -Werror -Wpedantic -Wall -g -fPIC 
+LDXXFLAGS = $(CCXFLAGS) -L. -l:$(LIBPROJECT) 
+LDGTESTFLAGS = $(LDXXFLAGS) -lgtest -lgtest_main -lpthread 
+ 
+DEPS = $(wildcard *.h) 
+SOURCES = main.cpp transformer.cpp autobot.cpp decepticon.cpp airbot.cpp sword.cpp wheels.cpp 
+OBJ = $(SOURCES:.cpp=.o) 
+ 
+TEST_SOURCES = test-transformer.cpp test-autobot.cpp test-decepticon.cpp test-airbot.cpp test-sword.cpp test-wheels.cpp 
+TEST_OBJ = $(TEST_SOURCES:.cpp=.o) 
+ 
+.PHONY: default all clean 
+ 
+default: all 
+ 
+%.o: %.cpp $(DEPS) 
+	$(CXX) $(CCXFLAGS) -c -o $@ $< 
+ 
 $(LIBPROJECT): $(OBJ) 
-	$(A) $(AFLAGS) $@ $^
+	$(A) $(AFLAGS) $@ $^ 
+ 
+$(PROJECT): main.o $(LIBPROJECT) 
+	$(CXX) -o $@ main.o $(LDXXFLAGS) 
+ 
 
-$(PROJECT): main.o $(LIBPROJECT)
-	$(CXX) -o $@ main.o $(LDXXFLAGS)
-
-$(TESTPROJECT): $(LIBPROJECT) $(TEST-OBJ) 
-	$(CXX) -o $@ $(TEST-OBJ) $(LDGTESTFLAGS)
-
-test: $(TESTPROJECT)
-
-all: $(PROJECT)
-
-.PHONY: clean
-
-clean:
-	rm -f *.o
+test: $(LIBPROJECT) $(TEST_OBJ) 
+	$(CXX) -o test-all $(TEST_OBJ) $(LDGTESTFLAGS) 
+ 
+all: $(PROJECT) test 
+ 
+clean: 
+	rm -f *.o 
 	rm -f $(PROJECT) 
-	rm -f $(LIBPROJECT)
-	rm -f $(TESTPROJECT)
+	rm -f $(LIBPROJECT) 
+	rm -f test-all

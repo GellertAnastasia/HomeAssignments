@@ -5,6 +5,37 @@
 #include "gtest/gtest.h"
 #include "transformer.h"
 
+int main(int argc, char **argv) {    
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
+}
+
+TEST(transformer, output)
+{
+	Transformer transformer(1,1);
+	std::ostringstream oss;
+	oss << transformer;
+	EXPECT_EQ(oss.str(),"Трансформер: уровень = 1, сила = 1");
+}
+TEST(transformer, less)
+{
+	Transformer transformer1(1,1);
+	Transformer transformer2(1,2);
+	EXPECT_TRUE(transformer1 < transformer2);
+}
+TEST(transformer, more)
+{
+	Transformer transformer1(1,2);
+	Transformer transformer2(1,1);
+	EXPECT_TRUE(transformer1 > transformer2);
+}
+TEST(transformer, equality)
+{
+	Transformer transformer1(1,1);
+	Transformer transformer2(1,1);
+	EXPECT_TRUE(transformer1 == transformer2);
+}
+
 TEST(transformer, fire)
 {
 	Transformer transformer;
