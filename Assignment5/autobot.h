@@ -15,7 +15,9 @@ public:
     Autobot(int valueWisdom, int valueLuck);
     Autobot();
 
-    bool transform();
+    void transform() override;
+    void openFire() override;
+    void ulta() override;
 
     void SetWisdom(int);
     void SetLuck(int);

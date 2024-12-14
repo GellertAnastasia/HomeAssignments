@@ -31,12 +31,6 @@ TEST(autobot, equality)
     EXPECT_TRUE(autobot1 == autobot2);
 }
 
-TEST(autobot, transform)
-{
-    Autobot autobot(1,1);
-    EXPECT_TRUE(autobot.transform());
-}
-
 TEST(autobot, GetWisdom)
 {
     Autobot autobot(1,1);

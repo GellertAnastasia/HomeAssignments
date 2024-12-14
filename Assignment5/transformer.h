@@ -22,6 +22,10 @@ public:
     Transformer(int valueLevel, int valueStrength);
     ~Transformer();
 
+    virtual void transform();
+    virtual void openFire();
+    virtual void ulta();
+
     bool fire();
     bool ultimate();
     bool jump();

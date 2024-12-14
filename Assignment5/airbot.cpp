@@ -30,6 +30,19 @@ Airbot::Airbot() : Airbot(0,0)
 {
 }
 
+void Airbot::transform()
+{
+    std::cout<<"airbot: transform"<<std::endl;
+}
+void Airbot::openFire()
+{
+    std::cout<<"airbot: openFire"<<std::endl;
+} 
+void Airbot::ulta()
+{
+    std::cout<<"airbot: ulta"<<std::endl;
+} 
+
 bool Airbot::fly()
 {
     return true;

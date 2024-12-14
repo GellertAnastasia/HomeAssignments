@@ -15,6 +15,10 @@ public:
     Decepticon();
     Decepticon(int valueAnger, int valueDexterity);
 
+    void transform() override;
+    void openFire() override;
+    void ulta() override;
+
     bool fight();
 
     void SetAnger(int);

@@ -10,30 +10,47 @@
 
 int main()
 {
-
-    Transformer transformer1(8,16);
-    std::cout << transformer1 << std::endl;
-
-    Autobot autobot(8,9);
-    std::cout << autobot << std::endl;
-
-    Decepticon decepticon(8,9);
-    std::cout << decepticon << std::endl;
-
-    Airbot airbot(8,9);
-    std::cout << airbot << std::endl;
-
-    Transformer transformer2(9,11);
-    if (transformer1 > transformer2)
-    {
-        std::cout<<"transformer1 сильнее transformer2"<<std::endl;
-    }
-    else if (transformer1 < transformer2)
-    {
-        std::cout<<"transformer1 слабее transformer2"<<std::endl;
-    }
-    else if (transformer1 == transformer2)
-    {
-        std::cout<<"transformer1 равен по силе с transformer2"<<std::endl;
-    }
+    Transformer transformer;
+    transformer.transform();
+    transformer.openFire();
+    transformer.ulta();
+    
+    Decepticon decepticon;
+    decepticon.transform();
+    decepticon.openFire();
+    decepticon.ulta();
+    
+    Autobot autobot;
+    autobot.transform();
+    autobot.openFire();
+    autobot.ulta();
+    
+    Airbot airbot;
+    airbot.transform();
+    airbot.openFire();
+    airbot.ulta();
+    
+    std::cout<<""<<std::endl;
+    
+    Transformer *bot1 = &transformer;
+    bot1->transform();
+    bot1->openFire();
+    bot1->ulta();
+    
+    Transformer *bot2 = &decepticon;
+    bot2->transform();
+    bot2->openFire();
+    bot2->ulta();
+    
+    Transformer *bot3 = &autobot;
+    bot3->transform();
+    bot3->openFire();
+    bot3->ulta();
+    
+    Transformer *bot4 = &airbot;
+    bot4->transform();
+    bot4->openFire();
+    bot4->ulta();
+    
+    
 }

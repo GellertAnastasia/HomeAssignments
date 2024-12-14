@@ -31,10 +31,18 @@ Autobot::Autobot() : Autobot(0,0)
 {
 }
 
-bool Autobot::transform()
+void Autobot::transform()
 {
-    return true;
+    std::cout<<"autobot: transform"<<std::endl;
 }
+void Autobot::openFire()
+{
+    std::cout<<"autobot: openFire"<<std::endl;
+} 
+void Autobot::ulta()
+{
+    std::cout<<"autobot: ulta"<<std::endl;
+} 
 
 void Autobot::SetWisdom(int valueWisdom)
 {

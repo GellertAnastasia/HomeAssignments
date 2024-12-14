@@ -30,6 +30,19 @@ Decepticon::Decepticon() : Decepticon(0,0)
 {
 }
 
+void Decepticon::transform()
+{
+    std::cout<<"decepticon: transform"<<std::endl;
+}
+void Decepticon::openFire()
+{
+    std::cout<<"decepticon: openFire"<<std::endl;
+} 
+void Decepticon::ulta()
+{
+    std::cout<<"decepticon: ulta"<<std::endl;
+} 
+
 bool Decepticon::fight()
 {
     return true;

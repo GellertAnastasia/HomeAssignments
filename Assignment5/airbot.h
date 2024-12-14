@@ -15,6 +15,10 @@ public:
     Airbot();
     Airbot(int valueSpeed, int valueBravery);
 
+    void transform() override;
+    void openFire() override;
+    void ulta() override;
+
     bool fly();
 
     void SetSpeed(int);

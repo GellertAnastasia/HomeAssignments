@@ -36,6 +36,19 @@ Transformer::~Transformer()
     delete wheels;
 }
 
+void Transformer::transform()
+{
+    std::cout<<"transformer: transform"<<std::endl;
+} 
+void Transformer::openFire()
+{
+    std::cout<<"transformer: openFire"<<std::endl;
+} 
+void Transformer::ulta()
+{
+    std::cout<<"transformer: ulta"<<std::endl;
+} 
+
 bool Transformer::strike(Sword sword)
 {
     sword.strike();
