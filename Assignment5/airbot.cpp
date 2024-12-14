@@ -1,5 +1,5 @@
 /* Anastasia Gellert st130144@student.spbu.ru
-	assignment 4
+	assignment 5
 */
 
 #include "airbot.h"

@@ -1,4 +1,4 @@
-# Assignment 4
+# Assignment 5
 ## Author
 Геллерт Анастасия Евгеньевна, группа 24.Б82-мм
 ## Contacts
@@ -6,8 +6,9 @@ st130144@stdudent.spbu.ru
 
 
 ## Description
-Home assingment 4 - overloading. 
-Implemented overloading of the output operator for class Transformer. Implemented overloading of constructor and comparison operators.
+Home assingment 5 - virtual methods.
+Creating three virtual methods(transform(), openFire(), ulta()). Explicit testing and testing through calling the pointer typed by the ancestor. 
+Сreating a vector from pointers.
 
 ## Build
 ### Demo application
