@@ -24,4 +24,9 @@ public:
     int GetLuck();
 };
 
+std::ostream& operator<<(std::ostream& os, Autobot& autobot);
+bool operator<(Autobot& autobot1, Autobot& autobot2);
+bool operator>(Autobot& autobot1, Autobot& autobot2);
+bool operator==(Autobot& autobot1, Autobot& autobot2);
+
 #endif

@@ -4,6 +4,23 @@
 
 #include "decepticon.h"
 
+std::ostream& operator<<(std::ostream& os, Decepticon& decepticon)
+{
+    return os << "Decepticon: anger = " << decepticon.GetAnger() << ", dexterity = " << decepticon.GetDexterity();
+}
+bool operator<(Decepticon& decepticon1, Decepticon& decepticon2)
+{
+    return decepticon1.GetAnger() < decepticon2.GetAnger();
+}
+bool operator>(Decepticon& decepticon1, Decepticon& decepticon2)
+{
+    return decepticon1.GetAnger() > decepticon2.GetAnger();
+}
+bool operator==(Decepticon& decepticon1, Decepticon& decepticon2)
+{
+    return decepticon1.GetAnger() == decepticon2.GetAnger();
+}
+
 Decepticon::Decepticon(int valueAnger, int valueDexterity)
 {
     anger = valueAnger;

@@ -4,6 +4,24 @@
 
 #include "autobot.h"
 
+std::ostream& operator<<(std::ostream& os, Autobot& autobot)
+{
+    return os << "Autobot: wisdom = " << autobot.GetWisdom() << ", luck = " << autobot.GetLuck();
+}
+bool operator<(Autobot& autobot1, Autobot& autobot2)
+{
+    return autobot1.GetLuck() < autobot2.GetLuck();
+}
+bool operator>(Autobot& autobot1, Autobot& autobot2)
+{
+    return autobot1.GetLuck() > autobot2.GetLuck();
+}
+bool operator==(Autobot& autobot1, Autobot& autobot2)
+{
+    return autobot1.GetLuck() == autobot2.GetLuck();
+}
+
+
 Autobot::Autobot(int valueWisdom, int valueLuck)
 {
     wisdom = valueWisdom;

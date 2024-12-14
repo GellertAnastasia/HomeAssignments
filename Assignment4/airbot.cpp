@@ -4,6 +4,23 @@
 
 #include "airbot.h"
 
+std::ostream& operator<<(std::ostream& os, Airbot& airbot)
+{
+    return os << "Airbot: speed = " << airbot.GetSpeed() << ", bravery = " << airbot.GetBravery();
+}
+bool operator<(Airbot& airbot1, Airbot& airbot2)
+{
+    return airbot1.GetSpeed() < airbot2.GetSpeed();
+}
+bool operator>(Airbot& airbot1, Airbot& airbot2)
+{
+    return airbot1.GetSpeed() > airbot2.GetSpeed();
+}
+bool operator==(Airbot& airbot1, Airbot& airbot2)
+{
+    return airbot1.GetSpeed() == airbot2.GetSpeed();
+}
+
 Airbot::Airbot(int valueSpeed, int valueBravery) : Autobot(valueSpeed, valueBravery)
 {
     speed = valueSpeed;

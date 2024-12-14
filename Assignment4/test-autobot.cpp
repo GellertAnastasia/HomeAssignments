@@ -5,6 +5,32 @@
 #include "gtest/gtest.h"
 #include "autobot.h"
 
+TEST(autobot, output)
+{
+    Autobot autobot(1,1);
+    std::ostringstream oss;
+    oss << autobot;
+    EXPECT_EQ(oss.str(),"Autobot: wisdom = 1, luck = 1");
+}
+TEST(autobot, less)
+{
+    Autobot autobot1(1,1);
+    Autobot autobot2(1,2);
+    EXPECT_TRUE(autobot1 < autobot2);
+}
+TEST(autobot, more)
+{
+    Autobot autobot1(1,2);
+    Autobot autobot2(1,1);
+    EXPECT_TRUE(autobot1 > autobot2);
+}
+TEST(autobot, equality)
+{
+    Autobot autobot1(1,1);
+    Autobot autobot2(1,1);
+    EXPECT_TRUE(autobot1 == autobot2);
+}
+
 TEST(autobot, transform)
 {
     Autobot autobot(1,1);

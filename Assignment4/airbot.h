@@ -24,4 +24,9 @@ public:
     int GetBravery();
 };
 
+std::ostream& operator<<(std::ostream& os, Airbot& airbot);
+bool operator<(Airbot& airbot1, Airbot& airbot2);
+bool operator>(Airbot& airbot1, Airbot& airbot2);
+bool operator==(Airbot& airbot1, Airbot& airbot2);
+
 #endif

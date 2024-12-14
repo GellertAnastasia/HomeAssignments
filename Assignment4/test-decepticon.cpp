@@ -5,6 +5,32 @@
 #include "gtest/gtest.h"
 #include "decepticon.h"
 
+TEST(decepticon, output)
+{
+    Decepticon decepticon(1,1);
+    std::ostringstream oss;
+    oss << decepticon;
+    EXPECT_EQ(oss.str(),"Decepticon: anger = 1, dexterity = 1");
+}
+TEST(decepticon, less)
+{
+    Decepticon decepticon1(1,1);
+    Decepticon decepticon2(2,1);
+    EXPECT_TRUE(decepticon1 < decepticon2);
+}
+TEST(decepticon, more)
+{
+    Decepticon decepticon1(2,1);
+    Decepticon decepticon2(1,1);
+    EXPECT_TRUE(decepticon1 > decepticon2);
+}
+TEST(decepticon, equality)
+{
+    Decepticon decepticon1(1,1);
+    Decepticon decepticon2(1,1);
+    EXPECT_TRUE(decepticon1 == decepticon2);
+}
+
 TEST(decepticon, fight)
 {
     Decepticon decepticon(1,1);

@@ -7,7 +7,7 @@
 
 std::ostream& operator<<(std::ostream& os, Transformer& transformer)
 {
-    return os << "Трансформер: уровень = " << transformer.GetLevel() << ", сила = " << transformer.GetStrength();
+    return os << "Transformer: level = " << transformer.GetLevel() << ", strength = " << transformer.GetStrength();
 }
 bool operator<(Transformer& transformer1, Transformer& transformer2)
 {

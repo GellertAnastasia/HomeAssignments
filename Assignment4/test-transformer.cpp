@@ -16,7 +16,7 @@ TEST(transformer, output)
     Transformer transformer(1,1);
     std::ostringstream oss;
     oss << transformer;
-    EXPECT_EQ(oss.str(),"Трансформер: уровень = 1, сила = 1");
+    EXPECT_EQ(oss.str(),"Transformer: level = 1, strength = 1");
 }
 TEST(transformer, less)
 {

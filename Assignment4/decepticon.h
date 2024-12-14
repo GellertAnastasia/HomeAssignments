@@ -24,4 +24,9 @@ public:
     int GetDexterity();
 };
 
+std::ostream& operator<<(std::ostream& os, Decepticon& decepticon);
+bool operator<(Decepticon& decepticon1, Decepticon& decepticon2);
+bool operator>(Decepticon& decepticon1, Decepticon& decepticon2);
+bool operator==(Decepticon& decepticon1, Decepticon& decepticon2);
+
 #endif
