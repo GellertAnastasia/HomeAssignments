@@ -3,6 +3,8 @@
 */
 
 #include <iostream>
+#include <vector>
+#include <memory>
 #include "decepticon.h"
 #include "autobot.h"
 #include "airbot.h"
@@ -30,7 +32,7 @@ int main()
     airbot.openFire();
     airbot.ulta();
     
-    std::cout<<""<<std::endl;
+    std::cout << "-------------------" << std::endl;
     
     Transformer *bot1 = &transformer;
     bot1->transform();
@@ -52,5 +54,28 @@ int main()
     bot4->openFire();
     bot4->ulta();
     
+    std::cout << "-------------------" << std::endl;
     
+    std::vector<std::unique_ptr<Transformer>> transformers; 
+    for (int i = 0; i < 3; ++i) 
+    { 
+        transformers.push_back(std::make_unique<Autobot>()); 
+    } 
+    for (int i = 0; i < 3; ++i) 
+    { 
+        transformers.push_back(std::make_unique<Decepticon>()); 
+    } 
+    for (int i = 0; i < 3; ++i) 
+    { 
+        transformers.push_back(std::make_unique<Transformer>()); 
+    } 
+    for (const auto& transformer : transformers) 
+    { 
+        transformer->transform(); 
+        transformer->openFire(); 
+        transformer->ulta(); 
+        std::cout << "" << std::endl;
+    }
+    return 0;
 }
+
