@@ -1,4 +1,6 @@
+#include <iostream>
 #include "obj.h"
+
 
 bool Class1::bar(int num, std::vector<float>&) { 
         return num > 0; 
@@ -10,7 +12,7 @@ float Class1::c_1_2() {
 	return 1.0f; 
 } 
 void Class1::c_1_3() { 
-	std::cout << "Class1 method c_1_3 called." << std::endl; 
+	std::cout << "c_1_3" << std::endl; 
 }
 
 
@@ -24,7 +26,7 @@ float Class2::c_2_2() {
 	return 2.0f; 
 } 
 void Class2::c_2_3() { 
-	std::cout << "Class2 method c_2_3 called." << std::endl; 
+	std::cout << "c_2_3" << std::endl; 
 }
 
 
@@ -38,7 +40,7 @@ float Class3::c_3_2() {
 	return 3.0f; 
 } 
 void Class3::c_3_3() { 
-	std::cout << "Class3 method c_3_3 called." << std::endl; 
+	std::cout << "Class3: c_3_3" << std::endl; 
 } 
 
 
