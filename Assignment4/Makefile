@@ -1,7 +1,7 @@
 PROJECT = transformer 
  
-LIBPROJECT = $(SOURCES:.cpp=.a) 
- 
+LIBPROJECT = lib$(PROJECT).a
+
 CXX = g++ 
 A = ar 
 AFLAGS = rsv 
